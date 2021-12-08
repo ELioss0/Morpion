@@ -38,7 +38,7 @@ public class Main {
 		
 			xoInput = input.nextInt();
 			while(tableur[xoInput].equals("X") || tableur[xoInput].equals("O")) {
-				System.out.println("Il y a déjà un " + tableur[xoInput] + " ici. Entrez la nouvelle position de " + tour + " :");
+				System.out.println("Il y a dÃ©jÃ  un " + tableur[xoInput] + " ici. Entrez la nouvelle position de " + tour + " :");
 				xoInput = input.nextInt();
 			}
 		
@@ -53,17 +53,16 @@ public class Main {
 		   tableur[3] == tableur[4] && tableur[4] == tableur[5]||
 		   tableur[6] == tableur[7] && tableur[7] == tableur[8]||
 	   	   tableur[0] == tableur[3] && tableur[3] == tableur[6]||
-	       tableur[1] == tableur[4] && tableur[4] == tableur[7]||
-	       tableur[2] == tableur[5] && tableur[5] == tableur[8]||
-	       tableur[0] == tableur[4] && tableur[4] == tableur[8]||
-	       tableur[2] == tableur[4] && tableur[4] == tableur[6]) 
-		{
-			System.out.println("Le " + tour + " a gagné !");
+	           tableur[1] == tableur[4] && tableur[4] == tableur[7]||
+	           tableur[2] == tableur[5] && tableur[5] == tableur[8]||
+	           tableur[0] == tableur[4] && tableur[4] == tableur[8]||
+	           tableur[2] == tableur[4] && tableur[4] == tableur[6]){
+			System.out.println("Le " + tour + " a gagnÃ© !");
 			System.exit(0);
 		}
 		
 		else if(rounds == 9){
-			System.out.println("Egalité !");
+			System.out.println("EgalitÃ© !");
 			System.exit(0);
 		}
 		
